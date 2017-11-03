@@ -41,6 +41,7 @@
             .container{
                 width:50%;
                 margin:0 auto;
+                /*border:1px solid;*/
             }
             
             header{
@@ -165,7 +166,7 @@
                 margin-left:5vw;
                 height:100%;
                 position:relative;
-                top:4vw;
+                top:8vw;
             }
             
             #explainPart h1{
@@ -175,10 +176,66 @@
                 letter-spacing: 2px;
             }
             
-            #explainPart h1 span{
+            #explainPart h1 > span{
                 font-size:2.5rem;
                 position:relative;
                 top:0.2rem;
+            }
+            
+            #explainPart h2{
+                color:white;
+                font-family: 'nanumsquare';
+                font-weight: normal;
+                letter-spacing: 0.5px;
+                padding-top:2.25vw;
+            }
+            
+            #explainPart h2:nth-of-type(2){
+                padding-top:0.75vw;
+            }
+            
+            #explainPart .linkBtns{
+                border:1.5px solid white;
+                width:47.5%;
+                height:3.5vw;
+                display:inline-block;
+                vertical-align: top;
+                margin:0.8%;
+                border-radius: 2px;
+                margin-top:2vw;
+                padding-top:10px;
+                cursor:pointer;
+                transition:0.25s;
+            }
+            
+            .linkBtns:hover{
+                background-color:white;
+            }
+            
+            .linkBtns:hover span{
+                color:black;
+            }
+            
+            .linkBtns img{
+                width:2rem;
+                display: inline-block;
+                vertical-align: top;
+                margin-left:1rem;
+                margin-right:0.4rem;
+            }
+            
+            .linkBtns span{
+                color:white;
+                font-family: 'nanumsquare';
+                font-weight: normal;
+                font-size:0.85rem;
+                display:inline-block;
+                letter-spacing: 0.5px;
+            }
+            
+            .linkBtns span > span{
+                font-weight: bold;
+                font-size:1rem;
             }
         </style>
     </head>
@@ -217,7 +274,19 @@
                 
                 <div id = "explainPart">
                     <h1>p<span>optube</span></h1>
-                    <h2>쉽고 빠른 유튜브 동영상 다운로더!</h2>
+                    <h2>쉽고 빠른 유튜브 동영상 다운로더</h2>
+                    <h2>지금 바로 만나보세요!</h2>
+                    
+                    <div class = "linkBtns" id = "playstoreBtn">
+                        <img src = "imgs/oneLogo.png" alt = "oneLogo" id = "oneLogo">
+                        <span>Download on<br>
+                            <span>ONE Store</span></span>
+                    </div>
+                    <div class = "linkBtns" id = "onestoreBtn" style = "background-color:white;">
+                        <img src = "imgs/playLogo2.png" alt = "playstoreLogo" id = "playStoreLogo">
+                        <span style = "color:black;">Get it on<br>
+                            <span style = "color:black;">Google Play</span></span>
+                    </div>
                 </div>
             </div>
         </div>
